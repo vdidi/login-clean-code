@@ -82,6 +82,7 @@ const testButtonIsDisabled = (sut: RenderResult, fieldName: string, isDisabled: 
   const button = sut.getByTestId(fieldName) as HTMLButtonElement
   expect(button.disabled).toBe(isDisabled)
 }
+
 describe('Login Component', () => {
   afterEach(cleanup)
 
